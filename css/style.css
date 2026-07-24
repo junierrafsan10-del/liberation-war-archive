@@ -1,10 +1,5 @@
-/*
- * Liberation War Archive — Custom Styles
- * Minor tweaks on top of Bootstrap 5 defaults.
- * Colour palette inspired by national flag (red, green) with neutral tones.
- */
+/* tweaks on top of bootstrap */
 
-/* ── Root variables ── */
 :root {
   --brand-green: #006a4e;
   --brand-red:    #c43a31;
@@ -12,14 +7,13 @@
   --brand-light:  #f8f6f0;
 }
 
-/* ── Global ── */
+/* navbar */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--brand-light);
   color: #222;
 }
 
-/* ── Navbar ── */
 .navbar-brand {
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -29,7 +23,7 @@ body {
   background-color: var(--brand-dark) !important;
 }
 
-/* ── Hero section (homepage) ── */
+/* hero */
 .hero-section {
   background: linear-gradient(135deg, var(--brand-green) 0%, #004d3a 100%);
   color: #fff;
@@ -41,7 +35,7 @@ body {
   font-size: 2.75rem;
 }
 
-/* ── Section headings ── */
+/* section headings */
 .section-heading {
   border-left: 5px solid var(--brand-red);
   padding-left: 1rem;
@@ -50,7 +44,7 @@ body {
   color: var(--brand-dark);
 }
 
-/* ── Cards ── */
+/* cards */
 .card {
   border: none;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
@@ -73,7 +67,7 @@ body {
   object-fit: cover;
 }
 
-/* ── Buttons ── */
+/* buttons */
 .btn-brand {
   background-color: var(--brand-red);
   color: #fff;
@@ -96,7 +90,7 @@ body {
   color: #fff;
 }
 
-/* ── Footer ── */
+/* footer */
 footer {
   background-color: var(--brand-dark);
   color: #ccc;
@@ -110,14 +104,14 @@ footer a:hover {
   color: #fff;
 }
 
-/* ── Table tweaks ── */
+/* table tweaks */
 .table-documents th {
   background-color: var(--brand-green);
   color: #fff;
   font-weight: 600;
 }
 
-/* ── Gallery image hover ── */
+/* gallery image hover */
 .gallery-item a {
   display: block;
   overflow: hidden;
@@ -132,7 +126,7 @@ footer a:hover {
   transform: scale(1.05);
 }
 
-/* ── Contact form ── */
+/* contact form */
 .contact-info-card {
   background-color: var(--brand-green);
   color: #fff;
@@ -143,12 +137,12 @@ footer a:hover {
   color: #ffe0d6;
 }
 
-/* ── Utility spacers ── */
+/* utility spacers */
 .section-pad {
   padding: 4rem 0;
 }
 
-/* ── Responsive heading tweaks ── */
+/* responsive */
 @media (max-width: 576px) {
   .hero-section h1 {
     font-size: 1.85rem;

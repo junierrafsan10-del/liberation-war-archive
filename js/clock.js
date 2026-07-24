@@ -1,7 +1,4 @@
-/*
- * clock.js — Live date & time display for the footer.
- * This is the ONLY JavaScript used in the entire project.
- */
+// updates footer clock every second
 (function () {
   "use strict";
 
