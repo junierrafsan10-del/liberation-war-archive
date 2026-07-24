@@ -1,0 +1,156 @@
+/*
+ * Liberation War Archive — Custom Styles
+ * Minor tweaks on top of Bootstrap 5 defaults.
+ * Colour palette inspired by national flag (red, green) with neutral tones.
+ */
+
+/* ── Root variables ── */
+:root {
+  --brand-green: #006a4e;
+  --brand-red:    #c43a31;
+  --brand-dark:   #1e2a2d;
+  --brand-light:  #f8f6f0;
+}
+
+/* ── Global ── */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--brand-light);
+  color: #222;
+}
+
+/* ── Navbar ── */
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.navbar-dark.bg-brand-dark {
+  background-color: var(--brand-dark) !important;
+}
+
+/* ── Hero section (homepage) ── */
+.hero-section {
+  background: linear-gradient(135deg, var(--brand-green) 0%, #004d3a 100%);
+  color: #fff;
+  padding: 5rem 0;
+}
+
+.hero-section h1 {
+  font-weight: 700;
+  font-size: 2.75rem;
+}
+
+/* ── Section headings ── */
+.section-heading {
+  border-left: 5px solid var(--brand-red);
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: var(--brand-dark);
+}
+
+/* ── Cards ── */
+.card {
+  border: none;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-img-top.placeholder-img {
+  background-color: #d4d4d4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 2rem;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* ── Buttons ── */
+.btn-brand {
+  background-color: var(--brand-red);
+  color: #fff;
+  border: none;
+}
+
+.btn-brand:hover {
+  background-color: #a62e26;
+  color: #fff;
+}
+
+.btn-outline-brand {
+  border: 2px solid var(--brand-red);
+  color: var(--brand-red);
+  background: transparent;
+}
+
+.btn-outline-brand:hover {
+  background-color: var(--brand-red);
+  color: #fff;
+}
+
+/* ── Footer ── */
+footer {
+  background-color: var(--brand-dark);
+  color: #ccc;
+}
+
+footer a {
+  color: #ddd;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+/* ── Table tweaks ── */
+.table-documents th {
+  background-color: var(--brand-green);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ── Gallery image hover ── */
+.gallery-item a {
+  display: block;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.gallery-item img {
+  transition: transform 0.25s ease;
+}
+
+.gallery-item a:hover img {
+  transform: scale(1.05);
+}
+
+/* ── Contact form ── */
+.contact-info-card {
+  background-color: var(--brand-green);
+  color: #fff;
+  border: none;
+}
+
+.contact-info-card a {
+  color: #ffe0d6;
+}
+
+/* ── Utility spacers ── */
+.section-pad {
+  padding: 4rem 0;
+}
+
+/* ── Responsive heading tweaks ── */
+@media (max-width: 576px) {
+  .hero-section h1 {
+    font-size: 1.85rem;
+  }
+}

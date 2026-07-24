@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse the Liberation War document archive — treaties, declarations, and correspondence with full provenance." />
+  <meta name="keywords" content="Liberation War, documents, treaties, declarations, correspondence, archive" />
+  <meta name="author" content="Liberation War Archive Project" />
+  <title>Liberation War Archive | Documents</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-brand-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">&#x1F4DC; Liberation War Archive</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="documents.html" aria-current="page">Documents</a></li>
+            <li class="nav-item"><a class="nav-link" href="interviews.html">Interviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main class="section-pad">
+    <div class="container">
+
+      <h1 class="section-heading">Document Archive</h1>
+      <p class="mb-4">A curated listing of key documents from the Liberation War period. Click on any title to view the full record below.</p>
+
+      <!-- Document Table -->
+      <div class="table-responsive">
+        <table class="table table-bordered table-documents">
+          <thead>
+            <tr>
+              <th scope="col">Title</th>
+              <th scope="col">Type</th>
+              <th scope="col">Date</th>
+              <th scope="col">Relevance</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="#detail-card">Proclamation of Independence</a></td>
+              <td>Declaration</td>
+              <td>26 March 1971</td>
+              <td>Formal declaration of Bangladesh&#8217;s independence by Sheikh Mujibur Rahman.</td>
+            </tr>
+            <tr>
+              <td><a href="#detail-card">Instrument of Surrender</a></td>
+              <td>Treaty</td>
+              <td>16 December 1971</td>
+              <td>Document signed by Pakistani forces marking the end of the war.</td>
+            </tr>
+            <tr>
+              <td><a href="#detail-card">Geneva Convention Compliance Report</a></td>
+              <td>Report</td>
+              <td>April 1971</td>
+              <td>Assessment of wartime conduct by international observers.</td>
+            </tr>
+            <tr>
+              <td><a href="#detail-card">Mujibnagar Government Orders</a></td>
+              <td>Correspondence</td>
+              <td>April &#8211; December 1971</td>
+              <td>Administrative directives issued by the provisional government in exile.</td>
+            </tr>
+            <tr>
+              <td><a href="#detail-card">Diary of a Sector Commander</a></td>
+              <td>Personal Record</td>
+              <td>1971</td>
+              <td>Field notes documenting guerrilla operations and civilian support.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Detail Card: Example Document -->
+      <section id="detail-card" class="mt-5">
+        <h2 class="section-heading">Featured Document</h2>
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Proclamation of Independence</h3>
+            <p class="text-muted small">Published: 26 March 1971 &bull; Source: Bangladesh National Archives</p>
+            <hr />
+            <p>
+              The Proclamation of Independence was issued by Sheikh Mujibur Rahman in the early hours of
+              26 March 1971, following the Pakistani military&#8217;s crackdown (Operation Searchlight).
+              The declaration read over radio by Major Ziaur Rahman on behalf of Mujib formally severed
+              ties with West Pakistan and called upon the people of East Pakistan to resist.
+            </p>
+            <p>
+              This document is regarded as the founding legal instrument of the People&#8217;s Republic of
+              Bangladesh. Its original Bangla text was broadcast from a clandestine transmitter; the English
+              translation was circulated internationally through diplomatic channels.
+            </p>
+            <ul class="list-unstyled small text-muted">
+              <li><strong>Type:</strong> Declaration</li>
+              <li><strong>Date:</strong> 26 March 1971</li>
+              <li><strong>Medium:</strong> Radio broadcast transcript / manuscript</li>
+              <li><strong>Source:</strong> Bangladesh National Archives, Dhaka &#8212; File No. 71/IND/001</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /.container -->
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="mb-1">&copy; 2026 Liberation War Archive Project. All rights reserved.</p>
+          <p class="mb-0 small">
+            Admin: admin@liberation-archive.org &bull; +880 1700-000000<br />
+            House 42, Road 10, Dhanmondi, Dhaka 1209, Bangladesh
+          </p>
+        </div>
+        <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+          <span id="live-clock" class="small">Loading...</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/clock.js"></script>
+</body>
+</html>
